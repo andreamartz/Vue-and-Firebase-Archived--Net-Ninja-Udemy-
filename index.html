@@ -5,7 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vue Basics</title>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <style>
+      .one {
+        color: green;
+      }
+      .two {
+        text-decoration: line-through
+      }
+    </style>
   </head>
   <body>
 
@@ -13,6 +21,9 @@
     <div id="app">
       <h2>{{ title }}</h2>
       <p>{{ greet('evening') }}</p>
+      <a v-bind:href="url">YouTube</a>
+      <div v-bind:class="classes">Classes from Instance</div>
+      <input type="text" v-bind:value="name">
     </div>
 
     <!-- The app.js script tag must come after the Vue CDN script tag, because
