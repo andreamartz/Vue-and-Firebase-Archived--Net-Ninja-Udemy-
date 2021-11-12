@@ -23,6 +23,11 @@
       <ul>
         <li v-for="item in items">{{ item }}</li>
       </ul>
+      <div v-for="(ninja, index) in ninjas">
+        <p>{{ index }} - {{ ninja.name }}</p>
+        <p>Age: {{ ninja.age }}</p>
+        <p>Belt color: {{ ninja.belt }}</p>
+      </div>
     </div>
 
     <!-- The app.js script tag must come after the Vue CDN script tag, because
