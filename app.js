@@ -2,11 +2,14 @@ new Vue({
   el: '#app',
   data: {
     title: 'Becoming a Vue Ninja',
-    name: 'Ryu',
+    showName: true,
   },
   methods: {
     logMessage() {
       console.log('Hello, World');
+    },
+    toggleName() {
+      this.showName = !this.showName;
     },
   },
 });

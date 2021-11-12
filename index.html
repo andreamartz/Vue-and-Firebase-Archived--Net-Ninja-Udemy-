@@ -20,9 +20,9 @@
     <h1>Vue Basics</h1>
     <div id="app">
       <h2>{{ title }}</h2>
-      <button @click.alt="logMessage">alt-click me</button>
-      <button @click.shift="logMessage">shift-click me</button>
-      <a href="http://www.google.com" @click.prevent="logMessage">Google</a>
+      <p v-if="showName">Mario</p>
+
+      <button @click="toggleName">ShowName: {{ showName }}</button>
     </div>
 
     <!-- The app.js script tag must come after the Vue CDN script tag, because
