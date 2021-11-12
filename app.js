@@ -2,14 +2,7 @@ new Vue({
   el: '#app',
   data: {
     title: 'Becoming a Vue Ninja',
-    showName: true,
+    items: ['Mushroom', 'Green Sheels', 'Red Shells', 'Banana', 'Star'],
   },
-  methods: {
-    logMessage() {
-      console.log('Hello, World');
-    },
-    toggleName() {
-      this.showName = !this.showName;
-    },
-  },
+  methods: {},
 });

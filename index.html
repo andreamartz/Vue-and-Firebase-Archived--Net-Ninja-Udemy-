@@ -20,9 +20,9 @@
     <h1>Vue Basics</h1>
     <div id="app">
       <h2>{{ title }}</h2>
-      <p v-if="showName">Mario</p>
-
-      <button @click="toggleName">ShowName: {{ showName }}</button>
+      <ul>
+        <li v-for="item in items">{{ item }}</li>
+      </ul>
     </div>
 
     <!-- The app.js script tag must come after the Vue CDN script tag, because
