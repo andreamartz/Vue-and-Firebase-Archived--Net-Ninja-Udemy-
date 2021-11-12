@@ -20,9 +20,9 @@
     <h1>Vue Basics</h1>
     <div id="app">
       <h2>{{ title }}</h2>
-      <p>I earn {{ wage }} dollars per hour</p>
-      <button @click="logEvent">Log Event Info</button>
-      <div class="canvas" @mousemove="logCoords">{{ coords.x }}, {{ coords.y }}</div>
+      <p>My name is {{ name }}</p>
+      <input type="text" @keyup="updateName">
+      <input type="text" @keypress="updateName">
     </div>
 
     <!-- The app.js script tag must come after the Vue CDN script tag, because
